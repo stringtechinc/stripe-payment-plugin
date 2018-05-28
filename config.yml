@@ -1,0 +1,7 @@
+name: StripePayment
+code: StripePayment
+version: 1.0.0
+service:
+    - StripePaymentServiceProvider
+orm.path:
+    - /Resource/doctrine

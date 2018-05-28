@@ -1,0 +1,29 @@
+Plugin\StripePayment\Entity\StripePaymentConfig:
+    type: entity
+    table: plg_stripe_payment_config
+    repositoryClass: Plugin\StripePayment\Repository\StripePaymentConfigRepository
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            column: stripe_payment_id
+    fields:
+        live_public_key:
+            type: text
+            nullable: false
+        live_secret_key:
+            type: text
+            nullable: false
+        test_public_key:
+            type: text
+            nullable: false
+        test_secret_key:
+            type: text
+            nullable: false
+        payment_id:
+            type: integer
+            nullable: false
+            unsigned: false
+    lifecycleCallbacks: {  }
